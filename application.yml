@@ -1,0 +1,22 @@
+# Common configuration for all Airline microservices
+
+app:
+  name: Airline Passenger Service System
+
+
+environment:
+  name: dev
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+  instance:
+    prefer-ip-address: true
+
+
+spring:
+  jackson:
+    time-zone: UTC
